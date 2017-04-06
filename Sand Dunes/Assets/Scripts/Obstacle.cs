@@ -27,8 +27,9 @@ public class Obstacle : MonoBehaviour {
 		{
 			Ray ray = m_camera.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
-			if ((Physics.Raycast(ray, out hit)) && (hit.collider.GetComponent<Obstacle>().m_ID == m_ID))
+			if ((Physics.Raycast(ray, out hit)) && (hit.collider.GetComponent<Obstacle>()))
 			{
+				if (hit.collider.GetComponent<Obstacle>().m_ID == m_ID)
 				m_moving = true;
 			}
 		}
@@ -42,7 +43,7 @@ public class Obstacle : MonoBehaviour {
 			else
 			{
 				m_moving = false;
-				m_manager.RefreshObstacleMap();
+				m_manager.m_readyToUpdate = true;
 			}
 		}
 	}

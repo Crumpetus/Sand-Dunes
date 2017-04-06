@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ObstacleManager : MonoBehaviour {
-	
+
+	public TerrainManager m_tManager;
 	private int m_width;
 	private int m_height;
 	private bool[,] m_obstacleMap;
+	public bool m_readyToUpdate = false;
 	[SerializeField]
 	private List<Obstacle> m_obstacles;
 	private float m_distanceBetweenPoints;
@@ -34,6 +36,11 @@ public class ObstacleManager : MonoBehaviour {
 		{
 			ResetMap();
 		}
+		if ((Input.GetKeyDown("space")) && (m_readyToUpdate))
+		{
+			RefreshObstacleMap();
+			m_readyToUpdate = false;
+		}
 	}
 
 	public void ResetMap()
@@ -58,7 +65,8 @@ public class ObstacleManager : MonoBehaviour {
 		Obstacle NewObstacle = Instantiate(CylinderObstacle);
 		NewObstacle.InitialiseObstacle(m_obstacles.Count, SpawnPos, this);
 		m_obstacles.Add(NewObstacle);
-		RefreshObstacleMap();
+		//RefreshObstacleMap();
+		m_readyToUpdate = true;
 	}
 
 	public void CreateCuboid()
@@ -67,7 +75,8 @@ public class ObstacleManager : MonoBehaviour {
 		Obstacle NewObstacle = Instantiate(CubeObstacle);
 		NewObstacle.InitialiseObstacle(m_obstacles.Count, SpawnPos, this);
 		m_obstacles.Add(NewObstacle);
-		RefreshObstacleMap();
+		//RefreshObstacleMap();
+		m_readyToUpdate = true;
 	}
 
 	public bool CheckCoordinate(int x, int y)
@@ -95,7 +104,8 @@ public class ObstacleManager : MonoBehaviour {
 				if (Physics.Raycast(CastPos, Vector3.up, 8.0f))
 				{
 					m_obstacleMap[i, j] = true;
-					Debug.Log("found one!");
+					//Debug.Log("found one!");
+					m_tManager.ForceSetCoord(j, i, 0.0f);
 				}
 				else
 				{

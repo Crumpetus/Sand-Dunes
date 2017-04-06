@@ -25,8 +25,9 @@ public class WindSource : MonoBehaviour {
 	{
 		m_ID = _i;
 		m_manager = _Manager;
-		transform.Rotate(new Vector3(0.0f, 50.0f * _i, 0.0f));
+		transform.Rotate(new Vector3(0.0f, 72.0f * _i, 0.0f));
 		m_strength = _strength;
+		m_particles.GetComponentInChildren<ParticleSystem>().startSize -= m_particles.GetComponentInChildren<ParticleSystem>().startSize * (1 - m_strength) / 1.5f;
 		UpdateDirection();
 	}
 	
@@ -36,9 +37,12 @@ public class WindSource : MonoBehaviour {
 		{
 			Ray ray = m_camera.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
-			if ((Physics.Raycast(ray, out hit)) && (hit.collider.GetComponent<WindSource>().m_ID == m_ID))
+			if ((Physics.Raycast(ray, out hit)) && (hit.collider.GetComponent<WindSource>()))
 			{
-				m_moving = true;
+				if (hit.collider.GetComponent<WindSource>().m_ID == m_ID)
+				{
+					m_moving = true;
+				}
 			}
 		}
 		if (m_moving)

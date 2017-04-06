@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class TerrainManager : MonoBehaviour {
 	[SerializeField]
 	private WindManager m_wind;
 	public ObstacleManager m_obstacles;
+	private float m_simulationMultiplier;
     private int m_width;
     private int m_height;
 	private float m_terrainSize;
@@ -26,6 +28,7 @@ public class TerrainManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		PopulateDropdownList();
+		m_simulationMultiplier = 1.0f;
 		m_heightMapTexture = m_heightMapTextures[0];
         m_terrain = Terrain.activeTerrain;
         //m_terrain.terrainData = new TerrainData();
@@ -49,7 +52,7 @@ public class TerrainManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey("space"))
+		if ((Input.GetKey("space")) && (m_wind.getNoOfSources() > 0))
 		{
 			AdjustHeights();
 			m_wind.SetNewHeights(m_posHeightMap);
@@ -58,6 +61,11 @@ public class TerrainManager : MonoBehaviour {
 		{
 			ResetMap();
 		}
+	}
+
+	public void ChangeMultiplier(Single _multiplier)
+	{
+		m_simulationMultiplier = _multiplier;
 	}
 
 	void PopulateDropdownList()
@@ -123,7 +131,7 @@ public class TerrainManager : MonoBehaviour {
 								TransferAmount = CalculateTransferAmount(i, j, WindDistanceToPoint, m_heightMap[i, j], m_heightMap[i + k, j + l], ReceivingSandVector, SandVector, WindVector);
 								if (TransferAmount > 0.0f)
 								{
-									TransferAmount = Mathf.Clamp(TransferAmount, 0.0f, 0.03f);
+									TransferAmount = Mathf.Clamp(TransferAmount, 0.0f, 0.03f * m_simulationMultiplier);
 									NewMap[i, j] -= TransferAmount;
 									NewMap[i + k, j + l] += TransferAmount;
 									NewPosMap[i, j] -= TransferAmount * m_terrainSize;
@@ -146,7 +154,7 @@ public class TerrainManager : MonoBehaviour {
 							TransferAmount = CalculateTransferAmount(i, j, 0.3f, m_heightMap[i, j], m_heightMap[i, j], SandVector, SandVector, WindVector);
 							if (TransferAmount > 0.0f)
 							{
-								TransferAmount = Mathf.Clamp(TransferAmount, 0.01f, 0.03f);
+								TransferAmount = Mathf.Clamp(TransferAmount, 0.01f, 0.03f * m_simulationMultiplier);
 								NewMap[i, j] -= TransferAmount;
 								NewPosMap[i, j] -= TransferAmount * m_terrainSize;
 							}
@@ -185,7 +193,13 @@ public class TerrainManager : MonoBehaviour {
 			TransferAmount = _height1;
 		}
 		//Debug.Log("/ x = " + _x.ToString() + "/ y = " + _y.ToString() + "/ x2 = " + _x2.ToString() + "/ y2 = " + _y2.ToString() + "/ transfer amount = " + TransferAmount.ToString());
-		return TransferAmount;
+		return TransferAmount * m_simulationMultiplier;
+	}
+
+	public void ForceSetCoord (int _x, int _y, float _val)
+	{
+		m_heightMap[_x, _y] = _val;
+		m_posHeightMap[_x, _y] = _val * m_terrainSize;
 	}
 
 	Vector3 FindGridPos(int _x, int _y)

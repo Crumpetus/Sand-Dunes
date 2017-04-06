@@ -1,0 +1,238 @@
+Initialize engine version: 5.3.3f1 (910d71450a97)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon (TM) R9 380 Series (ID=0x6939)
+    Vendor:   ATI
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+Platform assembly: C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Crumpetus\Documents\Important\Projects\Other Projects\Sand Dunes\Sand Dunes\Builds\Jan Prototype\Sand Dunes_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.461236 ms
+m_maxDistanceToTransfer = 0.6647683
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+m_terrainSize = 30
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+m_width = 256m_height = 256
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+m_distanceBetweenPoints = 0.390625
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+m_maxDistance = 0.5524272
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+m_windHeights Length = 65536FirstInstance = 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.0, 0.0, 0.4) point 125, 125 = (0.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+m_windMap Length = 65536FirstInstance = (0.0, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+m_strengthMap Length = 65536FirstInstance = 0.9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.4, 0.0, 0.0) point 125, 125 = (0.0, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.2, 0.0, -0.3) point 125, 125 = (0.4, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.2, 0.0, 0.3) point 125, 125 = (-0.2, 0.0, -0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.3, 0.0, 0.2) point 125, 125 = (-0.2, 0.0, 0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.2, 0.0, -0.3) point 125, 125 = (0.3, 0.0, 0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.3, 0.0, -0.2) point 125, 125 = (0.2, 0.0, -0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.3, 0.0, -0.3) point 125, 125 = (-0.3, 0.0, -0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.3, 0.0, 0.2) point 125, 125 = (0.3, 0.0, -0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.0, 0.0, 0.4) point 125, 125 = (0.3, 0.0, 0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.4, 0.0, 0.1) point 125, 125 = (0.0, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.0, 0.0, 0.0) point 125, 125 = (-0.4, 0.0, 0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.2, 0.0, -0.3) point 125, 125 = (0.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.0, 0.0, 0.0) point 125, 125 = (-0.2, 0.0, -0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.2, 0.0, 0.3) point 125, 125 = (0.0, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.3, 0.0, 0.2) point 125, 125 = (0.2, 0.0, 0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.4, 0.0, -0.1) point 125, 125 = (-0.3, 0.0, 0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.4, 0.0, 0.1) point 125, 125 = (-0.4, 0.0, -0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.1, 0.0, 0.4) point 125, 125 = (-0.4, 0.0, 0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.3, 0.0, 0.1) point 125, 125 = (-0.1, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.1, 0.0, -0.4) point 125, 125 = (-0.3, 0.0, 0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.2, 0.0, -0.3) point 125, 125 = (0.1, 0.0, -0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.1, 0.0, -0.4) point 125, 125 = (0.2, 0.0, -0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.2, 0.0, -0.3) point 125, 125 = (-0.1, 0.0, -0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.1, 0.0, 0.4) point 125, 125 = (0.2, 0.0, -0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.1, 0.0, 0.4) point 125, 125 = (0.1, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.3, 0.0, 0.2) point 125, 125 = (-0.1, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.4, 0.0, 0.0) point 125, 125 = (-0.3, 0.0, 0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.3, 0.0, -0.2) point 125, 125 = (-0.4, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.2, 0.0, 0.1) point 125, 125 = (-0.3, 0.0, -0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.1, 0.0, 0.4) point 125, 125 = (-0.2, 0.0, 0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.1, 0.0, 0.4) point 125, 125 = (-0.1, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.1, 0.0, 0.4) point 125, 125 = (-0.1, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (-0.2, 0.0, 0.3) point 125, 125 = (-0.1, 0.0, 0.4)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.3, 0.0, 0.3) point 125, 125 = (-0.2, 0.0, 0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.4, 0.0, 0.1) point 125, 125 = (0.3, 0.0, 0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.4, 0.0, 0.1) point 125, 125 = (0.4, 0.0, 0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.4, 0.0, -0.1) point 125, 125 = (0.4, 0.0, 0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.3, 0.0, -0.2) point 125, 125 = (0.4, 0.0, -0.1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.1, 0.0, -0.2) point 125, 125 = (0.3, 0.0, -0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.2, 0.0, -0.3) point 125, 125 = (0.1, 0.0, -0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.1, 0.0, -0.2) point 125, 125 = (0.2, 0.0, -0.3)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.2, 0.0, 0.0) point 125, 125 = (0.1, 0.0, -0.2)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.4, 0.0, 0.0) point 125, 125 = (0.4, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AveDirection = (0.4, 0.0, 0.0) point 125, 125 = (0.4, 0.0, 0.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 37c8 -> priority: 1 

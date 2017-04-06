@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 
 public class WindManager : MonoBehaviour {
 
+	public Button m_sourceButton;
 	[SerializeField]
 	protected float[,] m_windHeights;                   //the height of the wind at each point
 	[SerializeField]
@@ -17,13 +19,24 @@ public class WindManager : MonoBehaviour {
 	protected float m_distanceBetweenPoints;            //the distance in world units between 2 points
 	private float m_maxDistance;						//the maximum distance a point can be from a diagonal point
 	public WindSource WindSource;                       //the windsource prefab
-	public float m_strength;
+	[SerializeField]
+	private float m_strength;
 	private List<WindSource> m_sources;
 
 	//public WindManager(int _width, int _height, float _terrainDistance, float[,] _terrainHeights)
 	//{
 	//	InitialiseWindMap(_width, _height, _terrainDistance, _terrainHeights);
 	//}
+
+	public int getNoOfSources()
+	{
+		return m_sources.Count;
+	}
+	
+	public void setSourceStrength(Single _strength)
+	{
+		m_strength = _strength;
+	}
 
 	public Vector3 getWindVector(int _x, int _y)
 	{
@@ -61,6 +74,8 @@ public class WindManager : MonoBehaviour {
 	public void InitialiseWindMap (int _width, int _height, float _terrainDistance, float[,] _terrainHeights)
 	{
 		//initialise vector map and wind strength map
+		m_sourceButton.GetComponent<Image>().color = Color.green;
+		m_strength = 0.9f;
 		m_width = _width;
 		m_height = _height;
 		Debug.Log("m_width = " + m_width.ToString() + "m_height = " + m_height.ToString());
@@ -72,7 +87,7 @@ public class WindManager : MonoBehaviour {
 		m_windHeights = _terrainHeights;
 		Debug.Log("m_windHeights Length = " + m_windHeights.Length.ToString() + "FirstInstance = " + m_windHeights[125, 125].ToString());
 		m_sources = new List<WindSource>();
-		AddNewWindSource();
+		//AddNewWindSource();
 		m_windMap = new Vector3[_width, _height];
 		m_strengthMap = new float[_width, _height];
 		RefreshAverageDirection();
@@ -104,7 +119,8 @@ public class WindManager : MonoBehaviour {
 			Destroy(it.gameObject);
 		}
 		m_sources.Clear();
-		AddNewWindSource();
+		m_sourceButton.GetComponent<Image>().color = Color.green;
+		//AddNewWindSource();
 	}
 
 	void UpdateWindMap ()
@@ -226,6 +242,7 @@ public class WindManager : MonoBehaviour {
 		//NewSource.transform.position += new Vector3(0.0f, 0.0f, 0.0f);
 		NewSource.InitialiseSource(m_sources.Count, m_strength, this);
 		m_sources.Add(NewSource);
+		m_sourceButton.GetComponent<Image>().color = Color.white;
 	}
 
 	Vector3 FindAverageWindFromSources()
